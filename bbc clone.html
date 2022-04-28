@@ -1,0 +1,384 @@
+<html>
+    <head>
+        <title>Let's clone BBC</title>
+        <style type="text/css">
+            #topbar{
+                width:1300px;
+                margin:0 auto;
+                height:40px;
+            }
+            body{
+                margin:0;
+                padding:0;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            #logo{
+                margin-top: 8px;
+                width: 100px;
+                float: left;
+                margin-right: 8px;
+            }
+            .topbar_sec{
+                float:left;
+                border-left: 1px #CCCCCC solid;
+                height:100%;
+            }
+            #signin{
+                margin:8px 10px;
+                float: left;
+            }
+            #sign_text{
+                font-weight: bold;
+                font-size: 90%;
+                position: relative;
+                top:15px;
+                padding-right: 50px
+            }
+            .topbar_menu{
+                font-weight: bold;
+                font-size: 90%;
+                padding:15px 15px 0 15px;
+                height:25px;
+            }
+            #darrow{
+                padding-left: 50px;
+            }
+            #search_box{
+                background-color: #E4E4E4;
+                border:none;
+                font-weight: bold;
+                font-size: 15px;
+                padding: 5px;
+                margin: 8px 0px 8px 8px;
+                float: left;
+            }
+            #search_icon{
+                margin-top: 8px;
+            }
+            .clear{
+                clear: both;
+            }
+            #menu_bar_content{
+                background-color: #BB1919;
+                width: 100%;
+                height: 70px;
+            }
+            #menu_bar{
+               width:1300px;
+               margin:0 auto; 
+            }
+            h1{
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-size: 45px;
+                font-weight: normal;
+                padding-top: 5px;
+            }
+            #menu_bar_2_tab{
+                background-color: #BB1919;
+                width: 100%;
+                
+            }
+            #menu_bar_2{
+                width: 1300px;
+                margin: 0 auto;
+                height: 37px;
+            }
+            #menu_bar_2 a{
+                color: white;
+                text-decoration: none;
+                padding: 0 10px;
+                border-right: 1px #BB454F solid;
+                font-size: 13px;
+                position: relative;
+                top: 9px;
+            }
+            #menu_bar_2 a:hover{
+                text-decoration: underline;
+            }
+            .no_border{
+                border: none !important;
+            }
+            #daw{
+                height: 7px;
+                position: relative;
+                top: 8px;
+                left: -9px;
+                width: 9;
+            }
+            #page_continer{
+                width: 1300px;
+                margin: 0 auto;
+            }
+            h2 a{
+                color: gray;
+                font-weight: bold;
+                font-size: 23px;
+                border-bottom: 3px solid red;
+                text-decoration: none;
+                position: relative;
+                top: 10px
+                
+            }
+            h3 a{
+                color: black;
+                font-size: 25px;
+                text-decoration: none;
+            }
+            #art_title{
+                width: 500px;
+                font-size: 25px;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+            #art_title a{
+                color: #3D4B50;
+                text-decoration: none;
+               
+            }
+            #tik{
+                position: relative;
+                height: 275px;
+            }
+            #art_title a:hover{
+                color: #1380A1;
+                text-decoration: underline;
+            }
+            #article_summary{
+                font-size: 14px;
+                color: #5A5A5A;
+                width: 500px;
+                float: left;
+            }
+            #clock{
+                position: relative;
+                top: 4px;
+                height: 18px;
+            }
+            #article_continer{
+                float: left;
+                width: 500px;
+                
+            }
+            p{
+                font-size: 15px;
+                color: #5A5A5A;
+            }
+            p a{
+                color: #5A5A5A;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            p a:hover{
+                color: #1380A1;
+                text-decoration: underline;
+            }
+            #bott_links1 a{
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+                position: relative;
+                top: 30px;
+                
+            }
+            #bott_links1 a:hover{
+                text-decoration: underline;
+                color: #1380A1;
+            }
+            #LA_news{
+                float: left;
+                width: 250px;
+                padding-right: 10px;
+            }
+            #LA{
+            width: 250px;
+            }
+            #LA_Title a{
+                float: left;
+                color: #5A5A5A;
+                padding-top: 10px;
+                font-weight: bold;
+                text-decoration: none
+            }
+            #LA_Title a:hover{
+                color: #1380A1;
+                text-decoration: underline;
+            }
+            #LA_summary{
+                font-size: 16px;
+                color: #5A5A5A;
+                padding-top: 10px;
+                float: left;
+                padding-bottom: 22px;
+            }
+            #stik_summary{
+                font-size: 16px;
+                color: #5A5A5A;
+                padding-top: 10px;
+                float: left;
+                padding-bottom: 21px;
+            }
+            #glau_summary{
+                font-size: 16px;
+                color: #5A5A5A;
+                padding-top: 10px;
+                float: left;
+                padding-bottom: 5px;
+            }
+            #halo_summary{
+                font-size: 16px;
+                color: #5A5A5A;
+                padding-top: 10px;
+                float: left;
+                padding-bottom: 21px;
+            }
+            #sub_articles{
+                float: left;
+                width: 250px;
+                padding-top: 10px;
+                padding-right: 10px;
+            }
+
+        </style>
+    
+    
+    </head>
+    <body>
+      <div id='topbar'>
+        <img id='logo' src="images/Capture.PNG">
+        <div id='sigin' class='topbar_sec'>
+          <img id=signin src="images/sigin.PNG">
+            <span id='sign_text'>Sign in</span>
+          </div>
+          <div class="topbar_sec topbar_menu">Home</div>
+          <div class="topbar_sec topbar_menu">News</div>
+          <div class="topbar_sec topbar_menu">Sport</div>
+          <div class="topbar_sec topbar_menu">Reel</div>
+          <div class="topbar_sec topbar_menu">Worklife</div>
+          <div class="topbar_sec topbar_menu">Travel</div>
+          <div class="topbar_sec topbar_menu">Future</div>
+          <div class="topbar_sec topbar_menu">Culture</div>
+          <div class="topbar_sec topbar_menu">More <img id="darrow" src="images/dropdown%20arrow.PNG"></div>
+          <div class="topbar_sec">
+          <input id="search_box" type="text" value="Search">
+              <input type="image" id="search_icon" src="images/search%20icon.PNG">
+          </div>
+    
+    
+    </div>
+    <div class='clear'></div>
+        
+    <div id="menu_bar_content">
+        
+        <div id="menu_bar">
+        <h1>NEWS</h1>
+        </div>
+        <div class='clear'></div>
+        <div id="menu_bar_2_tab">
+            <div id="menu_bar_2">
+                <a href="">Home</a>
+                <a href="">Coronavirus</a>
+                <a href="">Video</a>
+                <a href="">World</a>
+                <a href="">Asia</a>
+                <a href="">UK</a>
+                <a href="">Business</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Stories</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Health</a>
+                <a href="">World News TV</a>
+                <a href="">In Picture</a>
+                <a href="" class="no_border">More</a>
+                <input type="image" id="daw" src="images/dropdown%20arrow%20white.PNG">
+            </div>
+        </div>
+        </div>
+
+        <div class='clear'></div>
+        <div id="page_continer">
+        <div id="mainarticle">
+            <h2><a href="">Tech</a></h2>
+            <div id="article_continer">
+            <img id="tik" src="images/tiktock.PNG">
+            <div id="art_title"><a href="">TikTok owner ByteDance sees earnings double</a></div>
+            <div id="article_summary">China's biggest technology companies have been coming under increasing scrutiny both at home and abroad.</div>
+            <p><img id="clock" src="images/clock.PNG">18 June 2021 | <a href="">Business</a></p>
+            <div id="bott_links1"><a href="" id="bott_links1">•	ByteDance co-founder Zhang to step down as CEO</a></div>
+            <div id="bott_links1"><a href="" >•	Chinese regulators rein in fintech platforms</a></div>
+            </div>
+        </div>
+        <div id="small_news">
+            <div id="LA_news">
+            <img id="LA" src="images/LA%20Lakers.PNG">
+            <div id="LA_Title"><a href="">LA Lakers home to be renamed after crypto firm</a></div>
+            <div id="LA_summary">The Staple Center in Los Angeles will be renamed the Crypto.com Arena in a $700 million deal.</div>
+            <p><img id="clock" src="images/clock.PNG">17 November 2021 | <a href="">US & Canada</a></p>
+            
+            <img id="LA" src="images/amazon.PNG">
+            <div id="LA_Title"><a href="">Amazon to stop accepting Visa credit cards in UK</a></div>
+            <div id="LA_summary">The online giant says high Visa fees means it won't process credit card transactions from 19 January.</div>
+            <p><img id="clock" src="images/clock.PNG">17 November 2021 | <a href="">Business</a></p>
+            </div>
+            
+            <div id="LA_news">
+            <img id="LA" src="images/small%20ticktock.PNG">
+            <div id="LA_Title"><a href="">TikTok takes extra steps to curb risky challenges</a></div>
+            <div id="stik_summary">The company has also highlighted the negative impact of online hoaxes.</div>
+            <p><img id="clock" src="images/clock.PNG">17 November 2021 | <a href="">Technology</a></p>
+            
+            <img id="LA" src="images/vaccine.PNG">
+            <div id="LA_Title"><a href="">Vaccine research amoung cyber attack targets</a></div>
+            <div id="LA_summary">The UK's National Cyber Security Center says it dealt with a record 777 incidents in the last year.</div>
+            <p><img id="clock" src="images/clock.PNG">17 November 2021 | <a href="">UK</a></p>
+            </div>
+            
+            <div id="LA_news">
+            <img id="LA" src="images/glaucoma.PNG">
+            <div id="LA_Title"><a href="">Glaucoma glove and bottle scanner win Dyson Award</a></div>
+            <div id="glau_summary">A device to stem blood loss from stab wounds, which won the UK award, also received an international prize.</div>
+            <p><img id="clock" src="images/clock.PNG">17 November 2021 | <a href="">Technology</a></p>
+                
+            <img id="LA" src="images/halo.PNG">
+            <div id="LA_Title"><a href="">Halo given early release for 20th anniversary</a></div>
+            <div id="halo_summary">Microsoft releases the free multiplayer part of its latest title three weeks early.</div>
+            <p><img id="clock" src="images/clock.PNG">17 November 2021 | <a href="">Technology</a></p>
+            </div>
+        </div>
+        
+        <div id="sub_articles">
+        <img id="LA" src="images/nvidia.PNG">
+        <div id="LA_Title"><a href="">UK orders further inquiry on Arm-Nvidia deal</a></div>
+        <p><img id="clock" src="images/clock.PNG">17 November 2021 | <a href="">Technology</a></p>
+        </div>
+        
+        <div id="sub_articles">
+        <img id="LA" src="images/apple.PNG">
+        <div id="LA_Title"><a href="">Apple digital IDs come with conditions and costs</a></div>
+        <p><img id="clock" src="images/clock.PNG">16 November 2021 | <a href="">Technology</a></p>
+        </div>
+        
+        <div id="sub_articles">
+        <img id="LA" src="images/internet.PNG">
+        <div id="LA_Title"><a href="">Internet speed seen as top homebuyer priority</a></div>
+        <p><img id="clock" src="images/clock.PNG">16 November 2021 | <a href="">Technology</a></p>
+        </div>
+            
+        <div id="sub_articles">
+        <img id="LA" src="images/google.PNG">
+        <div id="LA_Title"><a href="">Google Announces $740m investment in Australia</a></div>
+        <p><img id="clock" src="images/clock.PNG">16 November 2021 | <a href="">Business</a></p>
+        </div>
+        
+        <div id="sub_articles">
+        <img id="LA" src="images/halo1.PNG">
+        <div id="LA_Title"><a href="">Xbox at 20:'Will we have TVs in 20 years time?'</a></div>
+        <p><img id="clock" src="images/clock.PNG">15 November 2021 | <a href="">Newsbeat</a></p>
+        </div>
+            
+        </div>
+    </body>
+
+</html>
